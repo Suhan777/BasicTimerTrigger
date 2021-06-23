@@ -11,7 +11,7 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
 };
 
 const endsWith = (a: string, b: string) =>{
-    return a.lastIndexOf(b)
+    return a.lastIndexOf(b) === a.length - b.length
 }
 
 export default timerTrigger;
