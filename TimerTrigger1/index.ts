@@ -10,4 +10,8 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
     context.log('Timer trigger function ran!!!!!!', timeStamp);   
 };
 
+const endsWith = (a: string, b: string) =>{
+    return a.lastIndexOf(b)
+}
+
 export default timerTrigger;
