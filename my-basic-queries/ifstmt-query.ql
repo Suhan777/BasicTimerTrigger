@@ -1,6 +1,8 @@
 /**
- * @kind problem
+ * @description This query will scan all code to check for empty if statement blocks
  * @id Custom If Stmt Check
+ * @kind problem
+ * @problem.severity warning
  */
 
 import javascript
