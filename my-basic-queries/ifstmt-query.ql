@@ -1,3 +1,8 @@
+/**
+ * @kind problem
+ * @id Custom If Stmt Check
+ */
+
 import javascript
 
 from IfStmt ifstmt, Block block
