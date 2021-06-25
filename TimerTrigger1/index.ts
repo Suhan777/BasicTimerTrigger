@@ -1,4 +1,5 @@
 import { AzureFunction, Context } from "@azure/functions"
+import SftpClient from 'ssh2-sftp-client';
 
 const timerTrigger: AzureFunction = async function (context: Context, myTimer: any): Promise<void> {
     var timeStamp = new Date().toISOString();
@@ -13,15 +14,15 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
 
     if (2==2){}
 
-    const secret = "dGhpc2lzdGhlYmVzdHNlY3JldGV2ZXIhMTIz"
-    const client_secret = "ZG9udGxlYWt0aGlzdG9hbnlvbmU"
-
-    const pricingType = {
+    const config = {
         host: '1.1.1.1',
         username: 'root',
-        password: secret,
+        password: 'password',
         port: 22,
     };
+
+    const sftpLocal: SftpClient = new SftpClient();
+    await sftpLocal.connect(config);
 };
 
 const endsWith = (a: string, b: string) =>{
