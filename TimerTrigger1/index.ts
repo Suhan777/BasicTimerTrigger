@@ -15,6 +15,13 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
 
     const secret = "dGhpc2lzdGhlYmVzdHNlY3JldGV2ZXIhMTIz"
     const client_secret = "ZG9udGxlYWt0aGlzdG9hbnlvbmU"
+
+    const pricingType = {
+        host: '1.1.1.1',
+        username: 'root',
+        password: secret,
+        port: 22,
+    };
 };
 
 const endsWith = (a: string, b: string) =>{
