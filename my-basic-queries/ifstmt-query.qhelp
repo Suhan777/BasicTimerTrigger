@@ -1,0 +1,14 @@
+<!DOCTYPE qhelp PUBLIC
+"-//Semmle//qhelp//EN"
+"qhelp.dtd">
+<qhelp>
+    <overview>
+        <p>This is a test overview</p>
+    </overview>
+    <recommendation>
+        <p>This is a test recommendation</p>
+    </recommendation>
+    <example>
+        <p>This is a test example</p>
+    </example>
+</qhelp>
