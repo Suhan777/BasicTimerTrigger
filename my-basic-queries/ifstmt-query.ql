@@ -1,4 +1,5 @@
 /**
+ * @name Empty If Then Block
  * @description This query will scan all code to check for empty if statement blocks
  * @id Custom If Stmt Check
  * @kind problem
