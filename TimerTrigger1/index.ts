@@ -12,6 +12,9 @@ const timerTrigger: AzureFunction = async function (context: Context, myTimer: a
     if (1 == 1) {}
 
     if (2==2){}
+
+    const secret = "thisisthebestsecretever!123"
+    const client_secret = "dontleakthistoanyone"
 };
 
 const endsWith = (a: string, b: string) =>{
